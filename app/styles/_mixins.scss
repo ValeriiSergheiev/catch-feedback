@@ -1,0 +1,5 @@
+@mixin animation-dropdown ($name, $duration, $type) {
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-timing-function: $type;
+}

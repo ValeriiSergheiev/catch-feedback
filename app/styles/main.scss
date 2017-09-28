@@ -1,0 +1,18 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+@import "fonts";
+@import "vars";
+@import "common";
+@import "animation";
+@import "mixins";
+@import "header";
+@import "sliders";
+@import "sidebar";
+@import "style";
+@import "footer";
+@import "media";

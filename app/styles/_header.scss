@@ -1,0 +1,157 @@
+//HEADER
+header {
+	height: 88px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: #fff;
+	border-bottom: 1px solid $light-grey;
+	box-shadow: $shadow-3;
+}
+
+.header-left {
+	float: left;
+}
+
+.logo {
+	a {
+		margin-left: 20px;
+		line-height: 88px;
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.header-right {
+	float: right;
+}
+
+.sidebar-btn {
+	float: right;
+	display: none;
+}
+
+.hamburger {
+	background-color: $main-black;
+	width: 88px;
+	height: 88px;
+	padding: 0;
+}
+
+.auth {
+	float: right;
+	height: 100%;
+	width: 88px;
+	height: 88px;
+	a {
+		display: block;
+		height: 100%;
+		padding-top: 10px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+.lang {
+	float: right;
+	position: relative;
+	width: 88px;
+	height: 88px;
+	background-image: url('../images/lang-icon.png'), url('../images/carret_down.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, 65px center;
+	background-color: $main-yellow;
+	cursor: pointer;
+	&:hover .lang-links {
+		display: block;
+		@include animation-dropdown (dropdown, .2s, ease-out);
+	}
+}
+
+.lang-links {
+	display: none;
+	position: absolute;
+	top: 88px;
+	width: 88px;
+	background-color: $main-yellow;
+	a {
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 5px 0;
+		&:hover {
+			background-color: lighten($main-yellow, 20%);
+		}
+	}
+}
+
+.search-btn {
+	float: right;
+	display: block;
+	width: 88px;
+	height: 88px;
+	background-image: url('../images/search.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-left: 1px solid $light-grey;
+}
+
+.top-menu {
+	float: right;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+	& > li {
+		display: inline-block;
+		height: 88px;
+		a {
+			margin-right: 30px;
+			line-height: 88px;
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
+
+.submenu-list {
+	position: relative;
+	a span {
+		margin-left: 10px;
+	}
+	&:hover .submenu {
+		display: block;
+		@include animation-dropdown (dropdown, .2s, ease-out);
+	}
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	background-color: $main-black;
+	min-width: 200px;
+	li {
+		display: block;
+		a {
+			display: block;
+			width: 100%;
+			line-height: 1;
+			padding: 15px 20px;
+			color: darken(#fff, 20%);
+			border-bottom: 1px solid lighten($main-black, 10%);
+			&:hover {
+				opacity: 1;
+				color: #fff;
+			}
+		}
+	}
+}
+

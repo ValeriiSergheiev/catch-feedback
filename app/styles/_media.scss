@@ -1,0 +1,119 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    	.top-menu {
+    		display: none;
+    	}
+
+    	.sidebar-btn {
+    		display: block;
+    	}
+
+    	.solutions-item {
+    		padding: 15px;
+    	}
+
+    	.main-slider-content {
+    		top: 20px;
+    		h1 {
+    			font-size: 42px;
+    		}
+    		p {
+    			font-size: 18px;
+    			margin-top: 20px;
+    		}
+    	}
+
+    	.slick-dots {
+    		bottom: 20px;
+    	}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    	header {
+    		height: 44px;
+    	}
+
+    	.logo {
+    		a {
+    			line-height: 44px;
+    			img {
+    				height: 36px;
+    			}
+    		}
+    	}
+
+    	.hamburger {
+    		width: 46px;
+    		height: 44px;
+    		padding: 6px 0 0 ;
+    	}
+
+    	.auth {
+    		width: 44px;
+    		height: 44px;
+    	}
+
+    	.lang {
+    		width: 44px;
+    		height: 44px;
+    	}
+
+    	.lang-links {
+    		top: 44px;
+    	}
+
+    	.search-btn {
+    		width: 44px;
+    		height: 44px;
+    	}
+
+    	#main-slider {
+    		margin-top: 44px;
+    	}
+
+    	.solutions-item {
+    		min-height: auto;
+    	}
+
+    	.main-slider-content {
+    		top: 10px;
+    		padding: 0 10px;
+    		h1 {
+    			font-size: 18px;
+    			margin: 0;
+    		}
+    		p {
+    			font-size: 14px;
+    			margin-top: 0;
+    		}
+    		a {
+    			margin-top: 0;
+    		}
+    	}
+
+    	.slick-dots {
+    		display: none;
+    	}
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
