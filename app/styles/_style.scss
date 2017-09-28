@@ -39,3 +39,100 @@
 	}
 }
 /* End Solutions section */
+
+/* Section circles */
+#circles {
+	background-color: $main-black;
+}
+/* End Section circles */
+
+/* Section Software */
+.software-wrapper {
+	margin-top: 60px;
+}
+
+.software-item {
+	display: block;
+	position: relative;
+	float: left;
+	width: calc(100% / 6);
+	transition: all .3s;
+	&:hover {
+		transform: translateY(-10px);
+		//box-shadow: $shadow-3;
+		box-shadow: 0px 10px 22px -6px rgba(0,0,0,0.75);
+		.software-item-title {
+			display: none;
+		}
+		.software-item-hover {
+			opacity: 1;
+		}
+	}
+}
+
+.software-item-title {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .3);
+	h4 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 0 40px;
+		margin-top: calc(50% - 20px);
+		line-height: 30px;
+	}
+}
+
+.software-item-hover {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 30px 10px;
+	background-color: rgba(248, 231, 28, .8);
+	transition: all .6s;
+	p {
+		font-size: 15px;
+		line-height: 24px;
+	}
+}
+/* End Section Software */
+
+/* About section */
+#about {
+	padding-top: 0;
+}
+
+.about-item-wrapper {
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+.about-item {
+	margin-top: 20px;
+	h4 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	hr {
+		border: none;
+		height: 2px;
+		background-color: $main-yellow;
+		width: 150px;
+		margin-left: 0;
+	}
+	p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+/* End About section */

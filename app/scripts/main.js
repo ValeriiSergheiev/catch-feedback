@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	
+
+// wow init
+new WOW().init();
+
 //hamburgers
 $('.hamburger').click(function() {
 	$(this).toggleClass('is-active');
@@ -14,9 +17,17 @@ $('.main-slider').slick({
 	arrows: false,
 	fade: true,
 	speed: 3000,
-	autoplay: true,
+	//autoplay: true,
 	pauseOnHover: false,
-	autoplaySpeed: 6000
+	autoplaySpeed: 6000,
+	responsive: [
+	{
+		breakpoint: 992,
+		settings: {
+			dots: false
+		}
+	}
+	]
 });
 
 //sidebar menu 
@@ -26,5 +37,9 @@ $('.main-slider').slick({
 	//$('body').css('background-color', 'rgba(0, 0, 0, 0.6)');
 	$('header').css('right', '370px');
 });*/
+
+//Map height
+var mapHeight = $('#map').width();
+$('#map').height(mapHeight);
 
 });

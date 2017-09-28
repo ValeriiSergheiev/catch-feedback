@@ -1,0 +1,24 @@
+<svg width="35" height="34" viewBox="0 0 35 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>facebook copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(747 -4142)">
+<g id="facebook copy">
+<g id="Oval">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-747 4142)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-747 4142)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="translate(-734.609 4151.27)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 17.0376 34C 26.4472 34 34.0752 26.3888 34.0752 17C 34.0752 7.61116 26.4472 0 17.0376 0C 7.62799 0 0 7.61116 0 17C 0 26.3888 7.62799 34 17.0376 34Z"/>
+<path id="path1_stroke_2x" d="M 17.0376 36C 27.5476 36 36.0752 27.4976 36.0752 17L 32.0752 17C 32.0752 25.2801 25.3468 32 17.0376 32L 17.0376 36ZM 36.0752 17C 36.0752 6.50243 27.5476 -2 17.0376 -2L 17.0376 2C 25.3468 2 32.0752 8.71989 32.0752 17L 36.0752 17ZM 17.0376 -2C 6.52759 -2 -2 6.50243 -2 17L 2 17C 2 8.71989 8.72839 2 17.0376 2L 17.0376 -2ZM -2 17C -2 27.4976 6.52759 36 17.0376 36L 17.0376 32C 8.72839 32 2 25.2801 2 17L -2 17Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 5.66477 17.7727L 1.88749 17.7727L 1.88749 8.88524L 0 8.88524L 0 5.82291L 1.88749 5.82291L 1.88749 3.98439C 1.88749 1.4863 2.9527 0 5.98099 0L 8.50149 0L 8.50149 3.06345L 6.92618 3.06345C 5.74729 3.06345 5.66939 3.49139 5.66939 4.29007L 5.6642 5.82291L 8.5188 5.82291L 8.18469 8.88524L 5.6642 8.88524L 5.6642 17.7727L 5.66477 17.7727Z"/>
+</defs>
+</svg>
