@@ -106,6 +106,10 @@
     		min-height: auto;
     	}
 
+    	.main-slider-slide {
+    		height: auto;
+    	}
+
     	.main-slider-content {
     		top: 10%;
     		padding: 0 10px;
@@ -146,6 +150,18 @@
     			margin-right: 0;
     			margin: 0 10px;
     		}
+    	}
+
+    	#section-3 {
+    		padding-top: 0;
+    	}
+
+    	.section-3-item {
+    		margin-top: 80px;
+    	}
+
+    	.slider-customers-slide {
+    		padding: 0 15px;
     	}
     	
     }
