@@ -90,9 +90,14 @@ $('.quotes-slider').slick({
 var mapHeight = $('#map').width();
 $('#map').height(mapHeight);
 
+var industriesItemHeight = $('.industries-item').width();
+$('.industries-item').height(industriesItemHeight);
+
 $(window).resize(function() {
 	var mapHeight = $('#map').width();
-	$('#map').height(mapHeight);	
+	$('#map').height(mapHeight);
+	var industriesItemHeight = $('.industries-item').width();
+	$('.industries-item').height(industriesItemHeight);
 });
 
 });

@@ -308,6 +308,35 @@
 }
 /* End Quotes section */
 
+/* Industries Section */
+#industries {
+	background-color: $bg-grey;
+}
+
+.industries-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	margin-top: 30px;
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.50);
+	transition: all .3s;
+	p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: .03em;
+		padding: 30px;
+		text-align: center;
+		//padding-top: calc(50% - 15px);
+	}
+	&:hover {
+		transform: translateY(-20px);
+		box-shadow: 0px 20px 8px 0px rgba(0, 0, 0, 0.16);
+	}
+}
+/* End Industries Section */
+
 /* Started Section */
 #started {
 	background-color: $main-black;
@@ -376,3 +405,6 @@
 	animation-delay: .8s;
 }
 /* End Started Section */
+
+/* Touch Section */
+/* End Touch Section */
