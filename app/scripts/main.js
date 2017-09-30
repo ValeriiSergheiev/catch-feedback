@@ -43,7 +43,7 @@ $('.slider-customers').slick({
 	arrows: false,
 	//fade: true,
 	speed: 700,
-	autoplay: true,
+	//autoplay: true,
 	pauseOnHover: false,
 	autoplaySpeed: 2000,
 	responsive: [
@@ -51,6 +51,28 @@ $('.slider-customers').slick({
 		breakpoint: 992,
 		settings: {
 			dots: false
+		}
+	}
+	]
+});
+
+$('.quotes-slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: false,
+	arrows: true,
+	speed: 700,
+	//autoplay: true,
+	//pauseOnHover: false,
+	prevArrow: '<button type="button" class="slick-prev"></button>',
+	nextArrow: '<button type="button" class="slick-next"></button>',
+	autoplaySpeed: 2000,
+	responsive: [
+	{
+		breakpoint: 992,
+		settings: {
+			arrows: false
 		}
 	}
 	]

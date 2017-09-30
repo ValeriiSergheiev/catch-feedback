@@ -49,6 +49,23 @@
     		}
     	}
 
+    	.quotes-slider-slide-content {
+    		img {
+    			position: static;
+    			float: left;
+    			margin-right: 20px;
+    			//margin-bottom: 20px;
+    		}
+    	}
+
+    	.quotes-slide-text {
+    		float: none;
+    		max-width: none;
+    		article {
+    			text-align: justify;
+    		}
+    	}
+
     }
 
     /* Small Devices, Tablets */
@@ -107,11 +124,17 @@
     	}
 
     	.main-slider-slide {
-    		height: auto;
+    		height: calc(100vh - 44px);
+    		img {
+    			max-width: none;
+    			width: 168%;
+    			height: 100%;
+    			margin-left: -40%;
+    		}
     	}
 
     	.main-slider-content {
-    		top: 10%;
+    		top: 29%;
     		padding: 0 10px;
     		h1 {
     			font-size: 42px;
@@ -119,10 +142,10 @@
     		}
     		p {
     			font-size: 14px;
-    			margin-top: 0;
+    			margin-top: 20px;
     		}
     		a {
-    			margin-top: 0;
+    			margin-top: 20px;
     		}
     	}
 
@@ -169,14 +192,12 @@
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 
-    	.main-slider-slide {
-    		img {
-    			height: 250px;
-    		}
-    	}
-
     	.software-item {
     		width: 100%;
+    	}
+
+    	.pulse-wrapper {
+    		transform: scale(.7);
     	}
 
     }

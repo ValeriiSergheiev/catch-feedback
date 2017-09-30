@@ -184,7 +184,6 @@
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 25px;
-	//box-shadow: $shadow-3;
 	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(231,231,231,0.1);
 	p {
 		position: relative;
@@ -198,6 +197,7 @@
 
 .customers-slide-line {
 	margin-bottom: 60px;
+	max-width: 750px;
 	&:nth-child(odd) {
 		.customers-slide-content {
 			float: left;
@@ -240,3 +240,139 @@
 	}
 }
 /* End Section Customers slider */
+
+/* Quotes section */
+#quotes {
+	background-color: $main-yellow;
+	.slick-prev {
+		position: absolute;
+		left: 0;
+		top: calc(50% - 30px);
+		padding: 0;
+		border: none;
+		background-image: url('../images/slider_quotes/arrow_l.png');
+		background-color: transparent;
+		width: 60px;
+		height: 60px;
+		z-index: 100;
+		&:hover {
+			opacity: .8;
+		}
+	}
+	.slick-next {
+		position: absolute;
+		right: 0;
+		top: calc(50% - 30px);
+		padding: 0;
+		border: none;
+		background-image: url('../images/slider_quotes/arrow_r.png');
+		background-color: transparent;
+		width: 60px;
+		height: 60px;
+		z-index: 100;
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.quotes-slider-slide-content {
+	position: relative;
+	max-width: 750px;
+	img {
+		position: absolute;
+		display: block;
+		left: 0;
+		top: calc(50% - 153px / 2);
+	}
+}
+
+.quotes-slide-text {
+	float: right;
+	max-width: 560px;
+	h5 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		letter-spacing: .03em;
+		margin: 0;
+		line-height: 30px;
+		&:nth-child(2) {
+			color: #fff;
+		}
+	}
+	article {
+		font-size: 13px;
+		letter-spacing: .03em;
+		line-height: 26px;
+	}
+}
+/* End Quotes section */
+
+/* Started Section */
+#started {
+	background-color: $main-black;
+	padding: 40px 0;
+}
+
+.pulse-wrapper {
+	height: 450px;
+	padding: 40px 0;
+	position: relative;
+}
+
+.pulse-btn {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: $main-yellow;
+	z-index: 10;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: .03em;
+	text-transform: uppercase;
+	&:hover {
+		opacity: .8;
+	}
+	span {
+		display: inline-block;
+		margin-top: calc(50% - 18px);
+	}
+}
+
+.pulse-dot {
+	position: absolute;
+	border: 15px solid #505050;
+	background: transparent;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	animation: pulse 2s ease-out;
+	animation-iteration-count: infinite;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	opacity: 0;
+}
+
+.pulse-dot-2 {
+	@extend .pulse-dot;
+	animation-delay: .4s;
+}
+
+.pulse-dot-3 {
+	@extend .pulse-dot;
+	animation-delay: .8s;
+}
+/* End Started Section */

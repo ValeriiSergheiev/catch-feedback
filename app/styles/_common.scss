@@ -72,8 +72,9 @@ ul {
 	background-image: url('../images/arrow_r.svg');
 	background-repeat: no-repeat;
 	background-position: 90% center;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	transition: .3s;
+	//box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.50);
+	transition: .1s;
 	&:hover {
 		box-shadow: none;
 		//background-color: $main-black;
