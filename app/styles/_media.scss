@@ -6,7 +6,7 @@
     	.top-menu {
     		display: none;
     		position: absolute;
-    		top: 44px;
+    		top: 88px;
     		left: 0;
     		right: 0;
     		background-color: #fff;
@@ -76,6 +76,13 @@
     		}
     	}
 
+    	.software-item-hover {
+    		p {
+    			font-size: 15px;
+    			line-height: 24px;
+    		}
+    	}
+
     }
 
     /* Medium Devices, Desktops */
@@ -105,6 +112,28 @@
     		}
     	}
 
+    	.scheme-item-wrapper {
+    		padding: 0 15px;
+    	}
+
+    	.scheme-item {
+    		display: block;
+    		float: left;
+    		&:first-child {
+    			left: auto;
+    		}
+    		&:last-child {
+    			right: auto;
+    		}
+    	}
+
+    	.scheme-item-inner {
+    		p {
+    			font-size: 14px;
+    			padding: 0 20px;
+    		}
+    	}
+    	
     }
 
     /* Small Devices, Tablets */
@@ -133,6 +162,10 @@
     		width: 46px;
     		height: 44px;
     		padding: 6px 0 0 ;
+    	}
+
+    	.top-menu {
+    		top: 44px;
     	}
 
     	.auth {
@@ -253,7 +286,13 @@
     			float: none;
     		}
     	}
-    	
+
+    	.scheme-item {
+    		float: none;
+    		width: 50%;
+    		margin: 10px auto;
+    	}
+
     }
 
     /* Extra Small Devices, Phones */ 
@@ -290,6 +329,12 @@
     		width: 100%;
     		.list {
     			width: 100%;
+    		}
+    	}
+
+    	.scheme-item-inner {
+    		p {
+    			top: 25%;
     		}
     	}
 

@@ -10,6 +10,31 @@
 	}
 }
 
+@keyframes scheme-arrow-right {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+
+	to {
+		width: 110px;
+		opacity: 1;
+	}
+}
+
+@keyframes scheme-arrow-left {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+
+	to {
+		width: 110px;
+		opacity: 1;
+		transform: translateX(-110px);
+	}
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(1);

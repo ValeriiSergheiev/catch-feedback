@@ -94,11 +94,16 @@ $('#map').height(mapHeight);
 var industriesItemHeight = $('.industries-item').width();
 $('.industries-item').height(industriesItemHeight);
 
+var schemeItemHeight = $('.scheme-item').width();
+$('.scheme-item').height(schemeItemHeight);
+
 $(window).resize(function() {
 	var mapHeight = $('#map').width();
 	$('#map').height(mapHeight);
 	var industriesItemHeight = $('.industries-item').width();
 	$('.industries-item').height(industriesItemHeight);
+	var schemeItemHeight = $('.scheme-item').width();
+	$('.scheme-item').height(schemeItemHeight);
 });
 
 // Inputs placeholders

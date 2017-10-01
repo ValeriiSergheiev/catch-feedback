@@ -40,11 +40,106 @@
 }
 /* End Solutions section */
 
-/* Section circles */
-#circles {
+/* Section scheme */
+#scheme {
 	background-color: $main-black;
 }
-/* End Section circles */
+
+.scheme-item-wrapper {
+	max-width: 992px;
+}
+
+.scheme-item {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33%;
+	&:first-child {
+		left: 80px;
+	}
+	&:last-child {
+		right: 80px;
+	}
+}
+
+.scheme-item-outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed #666;
+	border-radius: 50%;
+}
+
+.scheme-item-inner {
+	position: relative;
+	border: 2px solid $main-yellow;
+	border-radius: 50%;
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	background: radial-gradient(circle at 50% 0, rgba(255,255,255,0), rgba(255,255,255,0), rgba(248,231,28,0.15));
+	p {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 37%;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 19px;
+		letter-spacing: .03em;
+		color: #fff;
+		margin: 0;
+		line-height: 1;
+	}
+}
+
+.scheme-arrow-right {
+	position: relative;
+	width: 0;
+	height: 2px;
+	margin-left: calc(50%);
+	background-color: $main-yellow;
+	top: calc(5% + 2px);
+	animation: scheme-arrow-right 2s forwards;
+	opacity: 0;
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: -4px;
+		width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 10px solid $main-yellow;
+		right: -1px;
+	}
+}
+
+.scheme-arrow-left {
+	position: relative;
+	width: 0px;
+	height: 2px;
+	margin-left: calc(50%);
+	background-color: $main-yellow;
+	bottom: calc(5% + 2px);
+	//transform: translateX(-110px);
+	animation: scheme-arrow-left 3s forwards;
+	opacity: 0;
+	&::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: -4px;
+		width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 10px solid $main-yellow;
+		left: -1px;
+	}
+}
+/* End Section scheme */
 
 /* Section Software */
 .software-wrapper {
@@ -99,8 +194,10 @@
 	background-color: rgba(248, 231, 28, .8);
 	transition: all .6s;
 	p {
-		font-size: 15px;
-		line-height: 24px;
+		//font-size: 15px;
+		//line-height: 24px;
+		font-size: 12px;
+		line-height: 1.2;
 	}
 }
 /* End Section Software */
