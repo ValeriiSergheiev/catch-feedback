@@ -605,13 +605,65 @@
   <!-- Touch Section -->
   <section id="touch" class="section-padding">
     <div class="section-title">
-      <h2>get in touch</h2>
+      <h2>get in touch today</h2>
     </div>
 
     <div class="container">
 
-      <form id="touch-form" action="#">
-        <input type="text" placeholder="First Name" required>
+      <form id="touch-form" class="touch-form" action="#">
+
+        <!-- <div class="input-placeholder" contenteditable="false">
+          <input type="text" required>
+          <p>First name <span>*</span></p>
+        </div>
+
+        <div class="input-placeholder" contenteditable="false">
+          <input type="text" required>
+          <p>Last Name <span>*</span></p>
+        </div>
+
+        <div class="input-placeholder" contenteditable="false">
+          <input type="email" required>
+          <p>Email <span>*</span></p>
+        </div>
+
+        <div class="input-placeholder" contenteditable="false">
+          <input type="text">
+          <p>Company</p>
+        </div>
+
+        <div class="input-placeholder" contenteditable="false">
+          <input type="tel">
+          <p>Phone</p>
+        </div> -->
+
+        <input type="text" placeholder="First Name *" required>
+        <input type="text" placeholder="Last Name *" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Company">
+        <input type="tel" placeholder="Phone">
+
+        <select>
+          <option data-display="Industry *"></option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="4">Option 3</option>
+        </select>
+
+        <select>
+          <option data-display="Country"></option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="4">Option 3</option>
+        </select>
+
+        <textarea name=""></textarea>
+
+        <div class="send-area clearfix center-block">
+          <p>By completing this form you agree to receive emails from Catch Feedback.<br>You can unsubscribe at any time.</p>
+          <button class="main-btn" type="submit" form="touch-form">send</button>
+        </div>
+
       </form>
 
     </div>

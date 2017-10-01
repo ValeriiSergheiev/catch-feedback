@@ -8,9 +8,10 @@ var wow = new WOW(
 )
 wow.init();
 
-//hamburgers
+//hamburgers + mob menu
 $('.hamburger').click(function() {
 	$(this).toggleClass('is-active');
+	$('.top-menu').slideToggle('fast');
 });
 
 //Sliders
@@ -99,5 +100,20 @@ $(window).resize(function() {
 	var industriesItemHeight = $('.industries-item').width();
 	$('.industries-item').height(industriesItemHeight);
 });
+
+// Inputs placeholders
+/*$('.input-placeholder input').focus(function() {
+	$(this).css('background-color', '#fff');
+});
+$('.input-placeholder input').blur(function() {
+	if ( $('.input-placeholder input').val().length === 0 ) {
+		$(this).css('background-color', 'transparent');
+	} else {
+		$(this).css('background-color', '#fff');
+	}
+});*/
+
+// nice select
+$('select').niceSelect();
 
 });

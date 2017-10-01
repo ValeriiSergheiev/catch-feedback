@@ -5,6 +5,45 @@
 
     	.top-menu {
     		display: none;
+    		position: absolute;
+    		top: 44px;
+    		left: 0;
+    		right: 0;
+    		background-color: #fff;
+    	}
+
+    	.menu {
+    		li {
+    			display: block;
+    			line-height: 1;
+    			height: auto;
+    			border-bottom: 1px solid lighten($main-black, 70%);
+    			a {
+    				display: block;
+    				line-height: 1;
+    				margin: 0;
+    				padding: 20px;
+    			}
+    		}
+    	}
+
+    	.submenu {
+    		position: static;
+    		background-color: #fff;
+    		li {
+    			margin-left: 50px;
+    			&:last-child {
+    				border: none;
+    			}
+    			a {
+    				font-size: 11px;
+    				border: none;
+    				color: lighten(#333, 30%);
+    				&:hover {
+    					color: $main-black;
+    				}
+    			}
+    		}
     	}
 
     	.sidebar-btn {
@@ -186,6 +225,34 @@
     	.slider-customers-slide {
     		padding: 0 15px;
     	}
+
+    	.touch-form {
+    		input {
+    			max-width: 448px;
+    		}
+    		textarea {
+    			max-width: 450px;
+    		}
+    	}
+
+    	.nice-select {
+    		max-width: 450px;
+    		.list {
+    			max-width: 450px;
+    		}
+    	}
+
+    	.send-area {
+    		width: auto;
+    		p {
+    			float: none;
+    			margin-bottom: 20px;
+    			width: 100%;
+    		}
+    		button {
+    			float: none;
+    		}
+    	}
     	
     }
 
@@ -203,6 +270,26 @@
     	.industries-item {
     		p {
     			font-size: 16px;
+    		}
+    	}
+
+    	.input-placeholder {
+    		max-width: 280px;
+    	}
+
+    	.touch-form {
+    		input {
+    			width: 100%;
+    		}
+    		textarea {
+    			width: 100%;
+    		}
+    	}
+
+    	.nice-select {
+    		width: 100%;
+    		.list {
+    			width: 100%;
     		}
     	}
 
