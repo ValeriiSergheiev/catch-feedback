@@ -294,7 +294,7 @@
 }
 
 .customers-slide-line {
-	margin-bottom: 60px;
+	margin-bottom: 45px;
 	max-width: 750px;
 	&:nth-child(odd) {
 		.customers-slide-content {
@@ -459,6 +459,9 @@
 	height: 130px;
 	border-radius: 50%;
 	background-color: $main-yellow;
+	background-image: url('../images/Triangle.png');
+	background-repeat: no-repeat;
+	background-position: center;
 	z-index: 10;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;

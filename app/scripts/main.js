@@ -52,7 +52,7 @@ $('.slider-customers').slick({
 	dots: true,
 	arrows: false,
 	speed: 700,
-	autoplay: true,
+	//autoplay: true,
 	pauseOnHover: false,
 	autoplaySpeed: 2000,
 	responsive: [
